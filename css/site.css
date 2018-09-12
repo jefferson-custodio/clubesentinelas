@@ -1,0 +1,360 @@
+body {
+    transition: animation 1s ease-in-out;
+    animation: opacity 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body *::selection{
+    background-color: red;
+    color: white;
+}
+@keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.cabecalho{
+    background-color: #a00505;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho img {
+    width: 50px;
+    padding: 10px;
+    padding-left: 50px;
+    display: inline-block;
+}
+.cabecalho span {
+    display: inline-block;
+    vertical-align: 25px;
+    font-size: 25px;
+    color: white;
+    border-left: 1px solid white;
+    padding: 15px 5px;
+    font-family: 'Open Sans', sans-serif;;
+
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 50px;
+}
+.fa-bars:hover{
+    color: #ff7b5a;
+
+}
+.fa-bars:active{
+    color: #ff7b5a;
+
+}
+.menu{
+    background-color: #a00505;
+    width: 300px;
+    height: 500px;   
+    position: relative;
+    float: right;
+    transform: translateX(300px);
+    overflow: hidden;
+    transition: 1s;
+    z-index: 6;
+}
+.logo img{
+    width: 110px;
+    margin-left: calc(50% - 55px) ;
+}
+.logo h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.logo{
+    width: 146px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px white double;
+}
+.lista ul li a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
+    width: 100%;
+}
+.lista ul li{
+    padding: 10px 20px;
+}
+.lista {
+    padding-top: 20px;
+}
+#Home{
+    padding-right: 153px;
+}
+#historia{
+    padding-left: 5px;
+    padding-right: 125px;
+}
+#historia span{
+    padding-left: 1px;
+}
+#Acampamentos {
+    padding-right: 38px;
+}
+#membros {
+    padding-right: 100px;
+}
+#membros span{
+    padding-left: 2px;
+}
+.lista ul li:hover{
+    background-color: red;
+}
+.lista ul li:active{
+    background-color: red;
+}
+.menu-active{
+    transform: translateX(0);
+    transition: 1s;
+    background-color: #a00505;
+    width: 300px;
+    height: 500px;   
+    position: relative;
+    float: right;
+    overflow: hidden;
+    z-index: 2;
+    animation: descer 1s;
+    animation-delay: 1.1s;
+    animation-fill-mode: both;
+
+    -webkit-animation: descer 1s;
+    -webkit-animation-delay: 1.1s;
+    -webkit-animation-fill-mode: both;
+}
+@keyframes descer {
+    from{ }
+    to{height: calc(100vh - 75px) ;}
+}
+.fa-times-circle{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 50px;
+}
+.fa-times-circle:hover{
+    color: #ff7b5a;
+
+}
+.logos-menu{
+    width: 100%;
+    padding-top: 8px;
+    text-align: center;
+}
+.icones-sociais li a i{
+    font-size: 36px;
+    border: 3px solid rgb(185, 185, 185);
+    border-radius: 50%;
+    color: rgb(185, 185, 185);
+    transition: .4s;
+}
+#face{
+    padding-right: 10px;
+}
+#face i{
+    padding: 6px 15px;
+}
+#insta i{
+    padding: 6px 8px;
+}
+#face i:hover{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
+    transition: .4s;
+}
+#face i:active{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
+}
+#insta i:hover{
+    background-color: #517fa4;
+    border-color: #517fa4;
+    color: white;
+    transition: .4s;
+}
+#insta i:active{
+    background-color: #517fa4;
+    border-color: #517fa4;
+    color: white;
+}
+.icones-sociais{
+    width: fit-content;
+    margin: auto;
+}
+.icones-sociais li{
+    display: inline-block;
+}
+footer{
+    display: block;
+    background-color: #a00505;
+    width: 100vw;
+    height: fit-content;
+    color: rgb(185, 185, 185);
+}
+.footer-limite{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.inline-fo{
+    display: inline-block;
+}
+.info-footer{
+    font-size: 17px;
+    width: fit-content;
+    padding: 40px 40px 40px 0;
+    text-align: left !important;
+}
+.sociais-icons-footer{
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center !important;
+}
+.sociais-icons-footer li {
+    display: inline-block;
+}
+.sociais-icons-footer i{
+    font-size: 27px;
+    border: 2px rgb(185, 185, 185) solid;
+    border-radius: 50%;
+    color: rgb(185, 185, 185);
+    padding: 10px;
+    transition: .4s;
+    text-align: center !important;
+}
+.sociais-icons-footer .fa-facebook-f{
+    padding: 8px 15px;
+}
+.sociais-icons-footer .fa-facebook-f:hover{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
+    transition: .4s;
+}
+.sociais-icons-footer .fa-facebook-f:active{
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
+}
+.sociais-icons-footer .fa-instagram{
+    padding: 9px 10px;
+}
+.sociais-icons-footer .fa-instagram:hover{
+    background-color: #517fa4;
+    border-color: #517fa4;
+    color: white;
+    transition: .4s;
+}
+.sociais-icons-footer .fa-instagram:active{
+    background-color: #517fa4;
+    border-color: #517fa4;
+    color: white;
+}
+.endereco-footer{
+    vertical-align: 24px;
+    text-align: left !important;
+}
+.endereco-footer ul li i{
+    font-size: 20px;
+    padding-right: 3px;
+}
+.endereco-footer ul li a{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+}
+.endereco-footer ul li{
+    padding-top: 10px;
+}
+.up-logo-footer img{
+    width: 200px;
+    margin-left: 40px;
+}
+.up-logo-2{
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
+.up-logo-2 img{
+    width: 200px;
+
+}
+.footer-rodape{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(83, 5, 5);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.footer-rodape div{
+    width: fit-content;
+    margin: auto;
+}
+.scroll{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    transition: .4s;
+    display: none;
+}
+.scroll i{
+    margin-top: 10px;
+}
+.scroll:hover, .scroll:focus{
+    background-color: black;
+    transition: .4s;
+}
+.credito{
+    font-size: 15px;
+    color: rgb(204, 204, 204); 
+}
+.credito span {
+    color: orange;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+@media (max-width:768px){
+    .cabecalho img {padding-left: 20px;}
+    #icon-abrir-fechar{right: 20px;}
+    .footer-limite{padding: 10px;}
+    .inline-fo{margin: auto;}
+
+}
+@media (max-width: 480px){
+    .cabecalho img {padding-left: 10px;}
+    #icon-abrir-fechar{right: 10px;}
+    .logo{display: none;}
+    .up-logo-footer{display: none;}
+    .up-logo-2{display: block;}
+    .footer-rodape{padding: 15px 0;}
+    
+}

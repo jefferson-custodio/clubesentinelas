@@ -1,0 +1,163 @@
+body{
+    background-color: #fbf6f0;
+}
+.content-after-header .topo-historia{
+    background-image: url(../img/História-wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+.content-after-header .topo-historia h1{
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 200px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 0 10px #fff;
+}
+@media (max-width: 1200px){
+    .content-after-header .topo-historia h1{
+        position: absolute;
+        font-size: 160px;
+        top: 50px;
+        left: calc(50% - 227px);
+    }
+
+}
+.nossa-historia {
+    max-width: 700px;
+    padding: 25px;
+    background-color: #fbf6f0;
+    border-radius: 15px;
+    transform: translateY(-70px);
+}
+.nossa-historia h2{
+    font-size: 60px;
+    font-family: 'Abel', sans-serif;
+    padding-bottom: 30px;
+}
+.nossa-historia i{
+    color: rgb(90, 90, 90);
+    font-size: 18px;
+}
+.nossa-historia p{
+    font-size: 20px;
+    padding: 7px 0;
+}
+.nossa-historia img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.nossa-historia span {
+    display: block;
+}
+.div-tab{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #eee9e3;
+    padding: 20px;
+    border-radius: 20px;
+}
+.div-tab h3{
+    font-size: 30px;
+    text-align: left;
+}
+.primeira-diretoria .cargos{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #d4c9bf;
+}
+.primeira-diretoria .cargos:nth-of-type(8){
+    border-bottom: none !important;
+}
+.dias-event span{
+    display: inline;
+    font-size: 20px;
+}
+.dias-event{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #d4c9bf;
+}
+.dias-event:nth-of-type(5){
+    border-bottom: none !important;
+}
+.div-abrir-fotos{
+    padding: 0 50px;
+}
+.div-abrir-fotos button{
+    width: 320px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    border: 3px solid black;
+    background-color: #e2d8cf;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+.div-abrir-fotos button:hover{
+    background-color: red;
+}
+.div-ft-inblock{
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    display: none;
+}
+.div-ft-inblock img{
+    display: inline-block;
+    width: 500px;
+    filter: contrast(200%);
+    -webkit-filter: contrast(150%);
+
+}
+.div-ft-inblock p{
+    padding: 40px;
+    text-align: right;
+}
+.botao-ativado{
+    box-shadow: inset 0 0 20px 0px #000;
+    transition: .4s;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media (min-width: 1000px) {
+    .nossa-historia{
+    margin-left: 200px;
+    transform: translateY(-70px)
+    }
+}
+@media (max-width:768px){
+    .div-abrir-fotos{
+        padding: 0;
+    }
+    .div-ft-inblock img{
+        width: 95%;
+    }
+}
+@media (max-width: 480px){
+    .content-after-header .topo-historia h1{
+        font-size: 750%;
+        top: 0;
+        left: calc(50% - 170px);
+    }
+    .div-ft-inblock img{
+        width: 400px;
+    }
+    .div-abrir-fotos button{
+        margin: auto;
+    }
+}

@@ -1,0 +1,148 @@
+.topo-pag{
+    background-image: url(../img/adventure-camp-camping.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+.topo-pag h1{
+    font-size: 100px;
+    color: #ffffff;
+    text-shadow: 5px 5px 20px black;
+    position: absolute;
+    width: fit-content;
+    top: 100px;
+    left: calc(50% - 400px);
+}
+.acampamento-camp{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    background-color: #f5f0ea;
+    padding: 50px 0;
+    display: none;
+    transition: .4s;
+}
+.camporis h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.botao-sair{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 50px;
+    margin-left: auto;
+    color: white;
+    background-color: rgb(34, 34, 80);
+    
+}
+.botao-sair:hover, .botao-sair:focus{
+    background-color: #ffffff;
+    color: black;
+    transition: all .4s;
+}
+.acampamento-camp .img-vid-campori-2018 img{
+    display: inline-block;
+    width: 500px;
+
+}
+.campori-2018 .img-vid-campori-2018 .video-iframe{
+    margin: auto;
+    width: 700px;
+   height: 400px;
+}
+
+.camporis{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-100px);
+
+}
+.fig-campori{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid darkgreen;
+    display: inline-block;
+    margin: 20px;
+}
+.fig-campori:hover, .fig-campori:focus{
+    box-shadow: 5px 5px 20px black;
+}
+.fig-campori img{
+    width: 300px;
+    height: 300px;
+}
+.campori-button{
+    width: 100%;
+    height: 50px;
+    background-color: darkgreen;
+    border: darkgreen;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    transition: .4s;
+}
+.campori-button:hover, .campori-button:focus{
+    background-color: rgb(255, 255, 255);
+    color: darkgreen;
+    border-top: darkgreen 5px solid;
+    transition: all .4s;
+}
+.menu{
+    position: absolute;
+    top: 75px;
+    right: -1px;
+}
+.menu-active{
+    position: absolute;
+    top: 75px;
+    right: 0;
+    transition: 1s !important;
+}
+@media (max-width:768px){
+    .topo-pag h1{
+        font-size: 60px;
+        left: calc(50% - 240px)
+    }
+    .acampamento-camp{
+        min-height: 2500px;
+    }
+    .campori-2018 .img-vid-campori-2018 .video-iframe{
+        width: 500px;
+        height: 300px;
+    }
+    .acampamento-camp img{
+        width: 90%;
+    }
+}
+@media (max-width: 480px){
+    .topo-pag h1{
+        top: 50px;
+        font-size: 40px;
+        left: calc(50% - 160px)
+    }
+    .topo-pag{
+        height: 200px;
+    }
+    .campori-2018 .img-vid-campori-2018 .video-iframe{
+        width: 100%;
+        height: 250px;
+    }
+    .fig-campori{
+        margin: 20px 0;
+    }
+    .camporis{
+        transform: translateY(-50px)
+    }
+    
+}
