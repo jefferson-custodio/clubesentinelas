@@ -98,17 +98,7 @@
     border-top: darkgreen 5px solid;
     transition: all .4s;
 }
-.menu{
-    position: absolute;
-    top: 75px;
-    right: -1px;
-}
-.menu-active{
-    position: absolute;
-    top: 75px;
-    right: 0;
-    transition: 1s !important;
-}
+
 @media (max-width:768px){
     .topo-pag h1{
         font-size: 60px;
