@@ -299,7 +299,6 @@
         padding-top: 250px;
     }
     .after-carro-fixed-text{
-        padding-top: 25px;
         margin-left: 10px;
     }
     .after-carro-fixed h2{
@@ -308,11 +307,14 @@
     .after-carro-fixed h3{
         font-size: 7vw;
     }
+    .after-carro-fixed{
+        height: 125px;
+    }
     .text-ap-fit{
-        top: 0;
+        top: 30px;
     }
     .text-apresentacao p{
         font-size: 20px;
     }
-
 }
+

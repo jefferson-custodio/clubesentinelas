@@ -1,6 +1,7 @@
 $(".fa").click(function(){
     $(".menu").toggleClass("menu-active");
     $(".fa-bars").toggleClass("fa-times-circle");
+    $("body").toggleClass("body-overflow");
 });
     
 //scrollToTop + surgimento do botão de scroll

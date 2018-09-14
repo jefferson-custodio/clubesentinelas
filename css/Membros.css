@@ -1,5 +1,6 @@
 body{
     background-color: #f5f0ea;
+    overflow-x: hidden;
 }
 .content-after-header{
     height: fit-content;
@@ -136,9 +137,18 @@ figcaption ul li{
 footer{
     margin-top: 171px;
 }
-
 .remover-membro{
     display: none !important;
+}
+.menu{
+    position: absolute;
+    top: 75px;
+    right: -1px;
+}
+.menu-active{
+    position: absolute;
+    right: 0;
+    transition: all 1s !important;
 }
 @media (max-width:768px){ 
     .content-after-header .campo-pesquisa input{width: 340px;}
@@ -146,7 +156,7 @@ footer{
 }
 @media (max-width: 480px){
     .content-after-header h1{font-size: 60px;}
-    .content-after-header .campo-pesquisa{width: 300px;}
-    .content-after-header .campo-pesquisa input{width: 300px; margin-left: auto; margin-right: 0;}
+    .content-after-header .campo-pesquisa{width: 300px; margin: auto; display: block;}
+    .content-after-header .campo-pesquisa input{width: 300px; margin: auto;}
     
 }

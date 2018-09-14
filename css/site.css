@@ -1,14 +1,18 @@
 body {
     transition: animation 1s ease-in-out;
     animation: opacity 7s cubic-bezier(0.075, 0.82, 0.165, 1);
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+}
+.body-overflow{
+    overflow: hidden;
+}
+main{
+    overflow-x: hidden !important;
 }
 
 body *::selection{
     background-color: red;
     color: white;
-    overflow: hidden;
 }
 @keyframes opacity {
     0%{opacity: 0;}
@@ -55,17 +59,18 @@ body *::selection{
 .menu{
     background-color: #a00505;
     width: 300px;
-    height: 500px;   
-    position: absolute;
-    top: 75px;
-    right: -300px;
+    height: 0;   
+    float: right;
     overflow: hidden;
     transition: 1s;
     z-index: 6;
+    position: absolute;
+    top: 75px;
+    right: 0;
 }
 .logo img{
-    width: 110px;
-    margin-left: calc(50% - 55px) ;
+    width: 100px;
+    margin-left: calc(50% - 50px) ;
 }
 .logo h3{
     color: white;
@@ -121,10 +126,17 @@ body *::selection{
     background-color: red;
 }
 .menu-active{
+    transition: 1s;
+    background-color: #a00505;
+    width: 300px;
+    height: 100vh;   
+    float: right;
+    z-index: 6;
     position: absolute;
+    overflow: hidden;
     top: 75px;
     right: 0;
-    transition: 1s !important;
+
 }
 .fa-times-circle{
     color: white;
@@ -145,10 +157,11 @@ body *::selection{
 }
 .icones-sociais li a i{
     font-size: 36px;
-    border: 3px solid rgb(185, 185, 185);
+    border: 3px solid rgb(226, 224, 224);
     border-radius: 50%;
-    color: rgb(185, 185, 185);
+    color: rgb(226, 226, 226);
     transition: .4s;
+    margin-top: 15px;
 }
 #face{
     padding-right: 10px;
@@ -184,6 +197,8 @@ body *::selection{
 .icones-sociais{
     width: fit-content;
     margin: auto;
+    border-bottom: 1px white solid;
+    padding: 0 20px 15px 20px;
 }
 .icones-sociais li{
     display: inline-block;
@@ -319,6 +334,7 @@ footer{
 .credito{
     font-size: 15px;
     color: rgb(204, 204, 204); 
+    padding: 0 15px;
 }
 .credito span {
     color: orange;
@@ -337,9 +353,9 @@ footer{
 @media (max-width: 480px){
     .cabecalho img {padding-left: 10px;}
     #icon-abrir-fechar{right: 10px;}
-    .logo{display: none;}
-    .up-logo-footer{display: none;}
     .up-logo-2{display: block;}
+    .up-logo-footer{display: none;}
     .footer-rodape{padding: 15px 0;}
+    .menu-active{ width: 100vw;}
     
 }

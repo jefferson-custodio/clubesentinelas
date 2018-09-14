@@ -149,6 +149,9 @@ footer {
     }
 }
 @media (max-width: 480px){
+    .nossa-historia{
+        transform: translateY(-160px)
+    }
     .content-after-header .topo-historia h1{
         font-size: 750%;
         top: 0;
