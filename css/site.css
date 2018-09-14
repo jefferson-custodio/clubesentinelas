@@ -357,5 +357,7 @@ footer{
     .up-logo-footer{display: none;}
     .footer-rodape{padding: 15px 0;}
     .menu-active{ width: 100vw;}
+    .logo img{display: none;}
+    .lista{padding-top: 30px;}
     
 }
