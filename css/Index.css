@@ -9,25 +9,18 @@
     -webkit-animation: carro 30s infinite linear;
     -webkit-animation-fill-mode: both;
     animation: carro 30s infinite linear;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     z-index: -1;
 }
-.carregar-imgs{
+.carregar-imgs div{
     background-image: url(../img/barracas-por-do-sol-2.jpeg);
     width: 0;
     height: 0;
-}
-#img-2{
-    background-image: url(../img/clube-bandeira-1.jpeg);
-}
-#img-3{background-image: url(../img/barracas-acampamento.jpeg);
-}
-#img-4{
-    background-image: url(../img/clube-junto-acampamento.jpeg);
+    display: none;
 }
 @keyframes carro {
     0%{background-image: url(../img/clube-bandeira-2.jpeg);}

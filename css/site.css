@@ -2,6 +2,7 @@ body {
     transition: animation 1s ease-in-out;
     animation: opacity 7s cubic-bezier(0.075, 0.82, 0.165, 1);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .body-overflow{
     overflow: hidden;
@@ -172,32 +173,21 @@ body *::selection{
 #insta i{
     padding: 6px 8px;
 }
-#face i:hover{
+#face i:hover, #face i:focus{
     background-color: #3b5998;
     border-color: #3b5998;
     color: white;
     transition: .4s;
 }
-#face i:active{
-    background-color: #3b5998;
-    border-color: #3b5998;
-    color: white;
-}
-#insta i:hover{
+#insta i:hover, #insta i:focus{
     background-color: #517fa4;
     border-color: #517fa4;
     color: white;
     transition: .4s;
-}
-#insta i:active{
-    background-color: #517fa4;
-    border-color: #517fa4;
-    color: white;
 }
 .icones-sociais{
     width: fit-content;
     margin: auto;
-    border-bottom: 1px white solid;
     padding: 0 20px 15px 20px;
 }
 .icones-sociais li{
@@ -357,7 +347,6 @@ footer{
     .up-logo-footer{display: none;}
     .footer-rodape{padding: 15px 0;}
     .menu-active{ width: 100vw;}
-    .logo img{display: none;}
-    .lista{padding-top: 30px;}
-    
+    .logo{display: none;}
+    .lista{padding-top: 60px;}
 }
